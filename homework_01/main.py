@@ -22,6 +22,8 @@ PRIME = "prime"
 
 def is_prime(num):
     flag = True
+    if num < 2:
+        flag = False
     d = 2
     while d * d <= num:
         if num % d == 0:
