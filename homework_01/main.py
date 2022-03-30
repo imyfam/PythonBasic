@@ -45,10 +45,10 @@ def filter_numbers(numbers, refund):
     >>> filter_numbers([2, 3, 4, 5], EVEN)
     <<< [2, 4]
     """
-    if refund == 'odd':
+    if refund == ODD:
         result = [num for num in numbers if num % 2 != 0]
-    elif refund == 'even':
+    elif refund == EVEN:
         result = [num for num in numbers if num % 2 == 0]
-    else:
+    elif refund == PRIME:
         result = list(filter(is_prime, numbers))
     return result
